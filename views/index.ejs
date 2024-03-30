@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+
+</head>
+<body>
+  <h1>Blog</h1>
+  <a href="/posts/new">Write a new post➕</a>
+  <ul>
+    <% posts.forEach(function(post){ %>
+      <li>
+        <h2><%= post.title %></h2>
+        <p><%= post.content %></p>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
